@@ -31,7 +31,9 @@ def proof_of_work(last_proof):
     proof_validated = False
 
     while not proof_validated:
-        
+        if hashed_last_proof == last_proof:
+            
+
 
 
 
