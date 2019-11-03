@@ -30,6 +30,10 @@ def proof_of_work(last_proof):
     hashed_last_proof = hash(last_proof)
     proof_validated = False
 
+    while not proof_validated:
+        
+
+
 
 
     print("Proof found: " + str(proof) + " in " + str(timer() - start))
