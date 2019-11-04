@@ -27,6 +27,17 @@ def proof_of_work(last_proof):
     proof = 0
     #  TODO: Your code here
 
+    hashed_last_proof = hash(last_proof)
+    proof_validated = False
+
+    while proof_validated:
+        if hashed_last_proof == last_proof:
+
+
+
+
+
+
     print("Proof found: " + str(proof) + " in " + str(timer() - start))
     return proof
 
@@ -38,9 +49,12 @@ def valid_proof(last_hash, proof):
 
     IE:  last_hash: ...AE9123456, new hash 123456888...
     """
+    hash_str = str(last_hash)
+    proof_str = str(proof)
 
-    # TODO: Your code here!
-    pass
+    last_six_hash = hash_str[-6:]
+    first_six_proof = proof_str[:6]
+
 
 
 if __name__ == '__main__':
